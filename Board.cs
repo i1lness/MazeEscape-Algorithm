@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace MazeEscape_Algorithm
 {
-    public class Program
+    internal class Board
     {
-
     }
 }
