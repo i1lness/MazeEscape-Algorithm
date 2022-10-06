@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MazeEscape_Algorithm
+﻿namespace MazeEscape_Algorithm
 {
     public class Program
     {
@@ -13,7 +7,7 @@ namespace MazeEscape_Algorithm
             Player player;
             Board board = new Board(25, out player);
             board.GenerateMap();
-            player.Initialize();
+            player.Start();
 
             Console.CursorVisible = false;
 

@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MazeEscape_Algorithm
+﻿namespace MazeEscape_Algorithm
 {
     internal class Board
     {
@@ -33,14 +26,14 @@ namespace MazeEscape_Algorithm
 
         public Board(int size, out Player player)
         {
+            if (size % 2 == 0)
+                size++;
+
             DestY = size - 2;
             DestX = size - 2;
 
             player = new Player(1, 1, this);
             _player = player;
-
-            if (size % 2 == 0)
-                size++;
 
             Tile = new TileType[size, size];
             Size = size;
