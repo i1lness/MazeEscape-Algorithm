@@ -4,7 +4,7 @@
     {
         const char CIRCLE = '\u25cf';
 
-        public TileType[,] Tile { get; private set; }
+        public TileType[,] Tile { get; set; }
         public int Size { get; private set; }
 
         public int DestY { get; private set; }
